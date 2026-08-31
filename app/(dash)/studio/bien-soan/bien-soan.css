@@ -1,0 +1,16 @@
+/* Biên soạn — mượn lớp thẻ của Mẫu nội dung cho danh sách chọn ý tưởng (như
+   /studio/de-xuat đã làm), và lớp .soan có sẵn trong studio.css cho phần soạn
+   thảo. Ở đây chỉ thêm màu thẻ theo bề mặt cho danh sách chọn. */
+
+.card--fanpage       { --card-accent: var(--brand-500); --card-tint: var(--brand-050); --card-ink: var(--brand-700); }
+.card--ho_so_ca_nhan  { --card-accent: var(--sage);      --card-tint: var(--sage-bg);   --card-ink: var(--sage); }
+.card--tiktok        { --card-accent: var(--plum);      --card-tint: var(--plum-bg);   --card-ink: var(--plum); }
+.card--zalo          { --card-accent: var(--clay);      --card-tint: var(--clay-bg);   --card-ink: var(--clay); }
+
+/* Ý tưởng gốc xếp trên, khung soạn bài xếp dưới - đỡ chật hơn hai cột cạnh nhau
+   khi nội dung ý tưởng dài. */
+.cot-doc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

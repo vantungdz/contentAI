@@ -1,0 +1,76 @@
+/* Đề xuất hôm nay — mượn nguyên lớp thẻ của trang Mẫu nội dung (grid/card/badge/
+   preview/pillar/toolbar/chip) cho đồng bộ, chỉ thêm phần riêng ở đây: màu theo
+   bề mặt, trạng thái đã chọn, badge khám phá. */
+
+.card--fanpage       { --card-accent: var(--brand-500); --card-tint: var(--brand-050); --card-ink: var(--brand-700); }
+.card--ho_so_ca_nhan  { --card-accent: var(--sage);      --card-tint: var(--sage-bg);   --card-ink: var(--sage); }
+.card--tiktok        { --card-accent: var(--plum);      --card-tint: var(--plum-bg);   --card-ink: var(--plum); }
+.card--zalo          { --card-accent: var(--clay);      --card-tint: var(--clay-bg);   --card-ink: var(--clay); }
+
+.card--y-tuong {
+  cursor: pointer;
+  user-select: none;
+}
+
+.card--chon {
+  border-color: var(--brand-400);
+  box-shadow: 0 0 0 3px var(--brand-050);
+}
+
+.card--chon:hover {
+  border-color: var(--brand-400);
+}
+
+.card__top .badge--kham-pha {
+  background: var(--clay-bg);
+  color: var(--clay);
+}
+
+.card__check {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--brand-500);
+}
+
+.card__ly-do {
+  margin: -2px 0 12px;
+  font-size: 12.5px;
+  font-style: italic;
+  color: var(--ink-2);
+}
+
+.dem-so-luong {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.dem-so-luong input {
+  width: 56px;
+  padding: 7px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  font-size: 14px;
+  text-align: center;
+}
+
+.dem-so-luong input:focus {
+  border-color: var(--brand-400);
+  box-shadow: 0 0 0 3px var(--brand-050);
+  outline: none;
+}
+
+.toolbar--de-xuat {
+  border-bottom: none;
+}
+
+.luu-y-tuong {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--line);
+}
